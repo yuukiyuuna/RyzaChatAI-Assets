@@ -105,6 +105,39 @@
       },
       "neckRollDistanceScale": 1.0
     },
+    "ambientGaze": {
+      "yawLimit": 0.8,
+      "pitchUpLimit": 1.0,
+      "pitchDownLimit": -1.0,
+      "rollPlusLimit": 0.8,
+      "rollMinusLimit": -0.8,
+      "sizeSmall": 0.6,
+      "sizeMedium": 0.85,
+      "sizeLarge": 1.0,
+      "dwellShort": 0.6,
+      "dwellMedium": 1.5,
+      "dwellLong": 4.0,
+      "speedFast": 2.0,
+      "speedNormal": 1.0,
+      "speedSlow": 0.5,
+      "widthRatioYaw": 0.55,
+      "widthRatioPitch": 0.85,
+      "moveBaseSeconds": 0.15,
+      "centerHalfWidth": 0.3,
+      "maxStrengthScale": 1.15,
+      "curveBulgeRatio": 0.5,
+      "rollDurationScale": 1.5,
+      "headFollowDelay": 0.1,
+      "bodyFollowDelay": 0.6,
+      "followScaleStrong": 0.9,
+      "followScaleMedium": 0.7,
+      "followScaleWeak": 0.5,
+      "followScaleOpposite": -0.2,
+      "lookAtUserTau": 0.25,
+      "bodyResetKeep": 0.5,
+      "serverLookYawMagnitude": 0.7,
+      "serverLookPitchMagnitude": 0.7
+    },
     "windAnimationPrefix": "effect_wind",
     "postureKey": "posture_sitting",
     "mixDurationSaturationRatio": 0.1,
@@ -156,6 +189,78 @@
         "default": 0
       },
       "byGroupId": {
+        "grp_fg_016": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_017": {
+          "left": 3,
+          "right": 3
+        },
+        "grp_fg_018": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_019": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_020": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_021": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_022": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_023": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_024": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_025": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_026": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_027": {
+          "left": 0,
+          "right": 0
+        },
+        "grp_fg_028": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_029": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_030": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_031": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_032": {
+          "left": 2,
+          "right": 2
+        },
+        "grp_fg_033": {
+          "left": 2,
+          "right": 2
+        },
         "grp_fg_101": {
           "left": 0,
           "right": 0
@@ -263,78 +368,6 @@
         "grp_fg_133": {
           "left": 2,
           "right": 0
-        },
-        "grp_fg_016": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_017": {
-          "left": 3,
-          "right": 3
-        },
-        "grp_fg_018": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_019": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_020": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_021": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_022": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_023": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_024": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_025": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_026": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_027": {
-          "left": 0,
-          "right": 0
-        },
-        "grp_fg_028": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_029": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_030": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_031": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_032": {
-          "left": 2,
-          "right": 2
-        },
-        "grp_fg_033": {
-          "left": 2,
-          "right": 2
         },
         "grp_fg_201": {
           "left": 0,
@@ -461,593 +494,752 @@
     }
   },
   "emotionalGesture": {
-    "DriverDefs": [
-      {
-        "Id": "angry_h_1",
-        "No": "1",
-        "Spec": "{\"id\":\"angry_h_1\",\"description\":\"angry_興味あり_Var1(上目遣い)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":1.5,\"holdMax\":2.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_h_2",
-        "No": "2",
-        "Spec": "{\"id\":\"angry_h_2\",\"description\":\"angry_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.2,\"rollMax\":0.5,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_h_3",
-        "No": "3",
-        "Spec": "{\"id\":\"angry_h_3\",\"description\":\"angry_興味あり_Var3(そわそわ)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.3}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_h_4",
-        "No": "4",
-        "Spec": "{\"id\":\"angry_h_4\",\"description\":\"angry_興味あり_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "angry_l_1",
-        "No": "5",
-        "Spec": "{\"id\":\"angry_l_1\",\"description\":\"angry_興味なし_Var1(見下し)\",\"driver\":\"head\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.5,\"holdMax\":1.2,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_l_2",
-        "No": "6",
-        "Spec": "{\"id\":\"angry_l_2\",\"description\":\"angry_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.6,\"pitchMin\":0.2,\"pitchMax\":0.5,\"rollMin\":-0.2,\"rollMax\":0.5,\"transitionMin\":0.8,\"transitionMax\":1.2,\"holdMin\":0.6,\"holdMax\":1.1,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_l_3",
-        "No": "7",
-        "Spec": "{\"id\":\"angry_l_3\",\"description\":\"angry_興味なし_Var3(そわそわ)\",\"driver\":\"eye\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.5,\"delay\":0.6},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "angry_l_4",
-        "No": "8",
-        "Spec": "{\"id\":\"angry_l_4\",\"description\":\"angry_興味なし_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "angry_n_1",
-        "No": "9",
-        "Spec": "{\"id\":\"angry_n_1\",\"description\":\"angry_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":0.8,\"transitionMax\":1.2,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_n_2",
-        "No": "10",
-        "Spec": "{\"id\":\"angry_n_2\",\"description\":\"angry_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.5,\"pitchMax\":0.2,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":1.4,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_n_3",
-        "No": "11",
-        "Spec": "{\"id\":\"angry_n_3\",\"description\":\"angry_普通_Var3(そわそわ)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.3}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "angry_n_4",
-        "No": "12",
-        "Spec": "{\"id\":\"angry_n_4\",\"description\":\"angry_普通_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "crying_h_1",
-        "No": "13",
-        "Spec": "{\"id\":\"crying_h_1\",\"description\":\"crying_興味あり_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_h_2",
-        "No": "14",
-        "Spec": "{\"id\":\"crying_h_2\",\"description\":\"crying_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":1.3,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_h_3",
-        "No": "15",
-        "Spec": "{\"id\":\"crying_h_3\",\"description\":\"crying_興味あり_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.6,\"transitionMax\":2.8,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_l_1",
-        "No": "16",
-        "Spec": "{\"id\":\"crying_l_1\",\"description\":\"crying_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.3,\"rollMax\":0.2,\"transitionMin\":1.4,\"transitionMax\":2.4,\"holdMin\":0.5,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_l_2",
-        "No": "17",
-        "Spec": "{\"id\":\"crying_l_2\",\"description\":\"crying_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":-0.9,\"pitchMax\":-0.4,\"rollMin\":-0.4,\"rollMax\":0.3,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":0.5,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_l_3",
-        "No": "18",
-        "Spec": "{\"id\":\"crying_l_3\",\"description\":\"crying_興味なし_Var3(タメ)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":2.0,\"transitionMax\":3.6,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "crying_n_1",
-        "No": "19",
-        "Spec": "{\"id\":\"crying_n_1\",\"description\":\"crying_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.3,\"rollMax\":0.2,\"transitionMin\":1.2,\"transitionMax\":2.0,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_n_2",
-        "No": "20",
-        "Spec": "{\"id\":\"crying_n_2\",\"description\":\"crying_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.4,\"rollMax\":0.3,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.5,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "crying_n_3",
-        "No": "21",
-        "Spec": "{\"id\":\"crying_n_3\",\"description\":\"crying_普通_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.8,\"transitionMax\":3.2,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_h_1",
-        "No": "22",
-        "Spec": "{\"id\":\"cuddle_h_1\",\"description\":\"cuddle_興味あり_Var1(上目遣い)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":1.5,\"holdMax\":2.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_h_2",
-        "No": "23",
-        "Spec": "{\"id\":\"cuddle_h_2\",\"description\":\"cuddle_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_h_3",
-        "No": "24",
-        "Spec": "{\"id\":\"cuddle_h_3\",\"description\":\"cuddle_興味あり_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":0.6,\"rollMax\":1.0,\"transitionMin\":1.4,\"transitionMax\":2.4,\"holdMin\":2.0,\"holdMax\":4.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_l_1",
-        "No": "25",
-        "Spec": "{\"id\":\"cuddle_l_1\",\"description\":\"cuddle_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.3,\"yawMax\":0.8,\"pitchMin\":-0.3,\"pitchMax\":0.2,\"rollMin\":0.1,\"rollMax\":0.6,\"transitionMin\":1.4,\"transitionMax\":2.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_l_2",
-        "No": "26",
-        "Spec": "{\"id\":\"cuddle_l_2\",\"description\":\"cuddle_興味なし_Var2(動的)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":-0.4,\"pitchMax\":0.3,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":0.5,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "cuddle_l_3",
-        "No": "27",
-        "Spec": "{\"id\":\"cuddle_l_3\",\"description\":\"cuddle_興味なし_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.8,\"yawMax\":-0.3,\"pitchMin\":-0.3,\"pitchMax\":0.2,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":1.8,\"transitionMax\":3.2,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_n_1",
-        "No": "28",
-        "Spec": "{\"id\":\"cuddle_n_1\",\"description\":\"cuddle_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":1.2,\"transitionMax\":2.0,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_n_2",
-        "No": "29",
-        "Spec": "{\"id\":\"cuddle_n_2\",\"description\":\"cuddle_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.5,\"pitchMax\":0.2,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":0.8,\"transitionMax\":1.6,\"holdMin\":0.6,\"holdMax\":1.3,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "cuddle_n_3",
-        "No": "30",
-        "Spec": "{\"id\":\"cuddle_n_3\",\"description\":\"cuddle_普通_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":0.5,\"rollMax\":1.0,\"transitionMin\":1.6,\"transitionMax\":2.8,\"holdMin\":1.5,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "drv_1",
-        "No": "31",
-        "Spec": "{\"id\":\"drv_1\",\"description\":\"drv_1の説明\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":1.0,\"pitchMin\":-0.6,\"pitchMax\":0.6,\"rollMin\":-0.45,\"rollMax\":0.45,\"transitionMin\":0.7,\"transitionMax\":1.4,\"holdMin\":1.4,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":3.3,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "drv_2",
-        "No": "32",
-        "Spec": "{\"id\":\"drv_2\",\"description\":\"drv_2の説明\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":1.0,\"pitchMin\":-0.6,\"pitchMax\":0.6,\"rollMin\":-0.45,\"rollMax\":0.45,\"transitionMin\":0.7,\"transitionMax\":1.4,\"holdMin\":1.4,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":3.3,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "drv_3",
-        "No": "33",
-        "Spec": "{\"id\":\"drv_3\",\"description\":\"drv_3の説明\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-2.0,\"pitchMax\":-1.5,\"rollMin\":-0.45,\"rollMax\":0.45,\"transitionMin\":0.7,\"transitionMax\":1.4,\"holdMin\":1.4,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":3.3,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "drv_4",
-        "No": "34",
-        "Spec": "{\"id\":\"drv_4\",\"description\":\"drv_4の説明\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":1.0,\"pitchMin\":-0.6,\"pitchMax\":0.6,\"rollMin\":-0.45,\"rollMax\":0.45,\"transitionMin\":0.7,\"transitionMax\":1.4,\"holdMin\":1.4,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":3.3,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_h_1",
-        "No": "35",
-        "Spec": "{\"id\":\"happy_h_1\",\"description\":\"happy_興味あり_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":0.1,\"pitchMax\":0.6,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":0.6,\"transitionMax\":1.2,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_h_2",
-        "No": "36",
-        "Spec": "{\"id\":\"happy_h_2\",\"description\":\"happy_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":0.2,\"pitchMax\":0.5,\"rollMin\":0.3,\"rollMax\":0.9,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_h_3",
-        "No": "37",
-        "Spec": "{\"id\":\"happy_h_3\",\"description\":\"happy_興味あり_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.5,\"rollMax\":1.0,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":1.5,\"holdMax\":2.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_l_1",
-        "No": "38",
-        "Spec": "{\"id\":\"happy_l_1\",\"description\":\"happy_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.3,\"yawMax\":0.8,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.0,\"rollMax\":0.5,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.5,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_l_2",
-        "No": "39",
-        "Spec": "{\"id\":\"happy_l_2\",\"description\":\"happy_興味なし_Var2(動的)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":0.1,\"pitchMax\":0.4,\"rollMin\":0.1,\"rollMax\":0.7,\"transitionMin\":0.8,\"transitionMax\":1.2,\"holdMin\":0.6,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "happy_l_3",
-        "No": "40",
-        "Spec": "{\"id\":\"happy_l_3\",\"description\":\"happy_興味なし_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.8,\"yawMax\":-0.3,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":1.2,\"transitionMax\":1.8,\"holdMin\":1.0,\"holdMax\":1.8,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_n_1",
-        "No": "41",
-        "Spec": "{\"id\":\"happy_n_1\",\"description\":\"happy_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.1,\"rollMax\":0.6,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_n_2",
-        "No": "42",
-        "Spec": "{\"id\":\"happy_n_2\",\"description\":\"happy_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":0.1,\"pitchMax\":0.4,\"rollMin\":0.2,\"rollMax\":0.8,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "happy_n_3",
-        "No": "43",
-        "Spec": "{\"id\":\"happy_n_3\",\"description\":\"happy_普通_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":1.2,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_h_1",
-        "No": "44",
-        "Spec": "{\"id\":\"laughing_h_1\",\"description\":\"laughing_興味あり_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":0.2,\"pitchMax\":0.4,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_h_2",
-        "No": "45",
-        "Spec": "{\"id\":\"laughing_h_2\",\"description\":\"laughing_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":0.3,\"pitchMax\":0.6,\"rollMin\":0.4,\"rollMax\":1.0,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_h_3",
-        "No": "46",
-        "Spec": "{\"id\":\"laughing_h_3\",\"description\":\"laughing_興味あり_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.2,\"pitchMax\":0.4,\"rollMin\":0.6,\"rollMax\":1.0,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":1.0,\"holdMax\":1.8,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_l_1",
-        "No": "47",
-        "Spec": "{\"id\":\"laughing_l_1\",\"description\":\"laughing_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.1,\"rollMax\":0.6,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_l_2",
-        "No": "48",
-        "Spec": "{\"id\":\"laughing_l_2\",\"description\":\"laughing_興味なし_Var2(動的)\",\"driver\":\"eye\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":0.2,\"pitchMax\":0.5,\"rollMin\":0.2,\"rollMax\":0.8,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "laughing_l_3",
-        "No": "49",
-        "Spec": "{\"id\":\"laughing_l_3\",\"description\":\"laughing_興味なし_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.6,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_n_1",
-        "No": "50",
-        "Spec": "{\"id\":\"laughing_n_1\",\"description\":\"laughing_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":0.6,\"transitionMax\":1.2,\"holdMin\":0.7,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_n_2",
-        "No": "51",
-        "Spec": "{\"id\":\"laughing_n_2\",\"description\":\"laughing_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":0.2,\"pitchMax\":0.5,\"rollMin\":0.3,\"rollMax\":0.9,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "laughing_n_3",
-        "No": "52",
-        "Spec": "{\"id\":\"laughing_n_3\",\"description\":\"laughing_普通_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.5,\"rollMax\":1.0,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_h_1",
-        "No": "53",
-        "Spec": "{\"id\":\"neutral_h_1\",\"description\":\"neutral_興味あり_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.1,\"pitchMax\":0.4,\"rollMin\":-0.15,\"rollMax\":0.35,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_h_2",
-        "No": "54",
-        "Spec": "{\"id\":\"neutral_h_2\",\"description\":\"neutral_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.2,\"pitchMax\":0.5,\"rollMin\":-0.25,\"rollMax\":0.45,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_h_3",
-        "No": "55",
-        "Spec": "{\"id\":\"neutral_h_3\",\"description\":\"neutral_興味あり_Var3(そわそわ)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.1,\"pitchMax\":0.4,\"rollMin\":-0.15,\"rollMax\":0.35,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.3}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_h_4",
-        "No": "56",
-        "Spec": "{\"id\":\"neutral_h_4\",\"description\":\"neutral_興味あり_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.1,\"pitchMax\":0.4,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "neutral_l_1",
-        "No": "57",
-        "Spec": "{\"id\":\"neutral_l_1\",\"description\":\"neutral_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":0.5,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_l_2",
-        "No": "58",
-        "Spec": "{\"id\":\"neutral_l_2\",\"description\":\"neutral_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":-0.3,\"pitchMax\":0.4,\"rollMin\":-0.2,\"rollMax\":0.5,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_l_3",
-        "No": "59",
-        "Spec": "{\"id\":\"neutral_l_3\",\"description\":\"neutral_興味なし_Var3(そわそわ)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.5,\"delay\":0.6},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "neutral_l_4",
-        "No": "60",
-        "Spec": "{\"id\":\"neutral_l_4\",\"description\":\"neutral_興味なし_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-0.8,\"yawMax\":-0.3,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "neutral_n_1",
-        "No": "61",
-        "Spec": "{\"id\":\"neutral_n_1\",\"description\":\"neutral_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.5,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_n_2",
-        "No": "62",
-        "Spec": "{\"id\":\"neutral_n_2\",\"description\":\"neutral_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.3,\"pitchMax\":0.4,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":0.6,\"transitionMax\":1.2,\"holdMin\":0.7,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_n_3",
-        "No": "63",
-        "Spec": "{\"id\":\"neutral_n_3\",\"description\":\"neutral_普通_Var3(そわそわ)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.7,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.3}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "neutral_n_4",
-        "No": "64",
-        "Spec": "{\"id\":\"neutral_n_4\",\"description\":\"neutral_普通_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":-0.2,\"pitchMax\":0.3,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "sad_h_1",
-        "No": "65",
-        "Spec": "{\"id\":\"sad_h_1\",\"description\":\"sad_興味あり_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":1.2,\"transitionMax\":2.0,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_h_2",
-        "No": "66",
-        "Spec": "{\"id\":\"sad_h_2\",\"description\":\"sad_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.2,\"rollMax\":0.5,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.5,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_h_3",
-        "No": "67",
-        "Spec": "{\"id\":\"sad_h_3\",\"description\":\"sad_興味あり_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.6,\"transitionMax\":3.0,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_l_1",
-        "No": "68",
-        "Spec": "{\"id\":\"sad_l_1\",\"description\":\"sad_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":1.6,\"transitionMax\":2.8,\"holdMin\":0.5,\"holdMax\":1.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_l_2",
-        "No": "69",
-        "Spec": "{\"id\":\"sad_l_2\",\"description\":\"sad_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":-0.9,\"pitchMax\":-0.4,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":1.2,\"transitionMax\":2.2,\"holdMin\":0.4,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_l_3",
-        "No": "70",
-        "Spec": "{\"id\":\"sad_l_3\",\"description\":\"sad_興味なし_Var3(タメ)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":2.0,\"transitionMax\":4.0,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "sad_n_1",
-        "No": "71",
-        "Spec": "{\"id\":\"sad_n_1\",\"description\":\"sad_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":1.4,\"transitionMax\":2.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_n_2",
-        "No": "72",
-        "Spec": "{\"id\":\"sad_n_2\",\"description\":\"sad_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":-0.8,\"pitchMax\":-0.3,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":1.0,\"transitionMax\":1.8,\"holdMin\":0.5,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "sad_n_3",
-        "No": "73",
-        "Spec": "{\"id\":\"sad_n_3\",\"description\":\"sad_普通_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":-0.7,\"pitchMax\":-0.2,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.8,\"transitionMax\":3.6,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_h_1",
-        "No": "74",
-        "Spec": "{\"id\":\"shy_h_1\",\"description\":\"shy_興味あり_Var1(顔背け)\",\"driver\":\"head\",\"yawMin\":0.3,\"yawMax\":0.8,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.4,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_h_2",
-        "No": "75",
-        "Spec": "{\"id\":\"shy_h_2\",\"description\":\"shy_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.2,\"rollMax\":0.5,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.7,\"holdMax\":1.3,\"followers\":[{\"part\":\"body\",\"scale\":-0.3,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_h_3",
-        "No": "76",
-        "Spec": "{\"id\":\"shy_h_3\",\"description\":\"shy_興味あり_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":0.3,\"yawMax\":0.8,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.6,\"transitionMax\":2.8,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_h_4",
-        "No": "77",
-        "Spec": "{\"id\":\"shy_h_4\",\"description\":\"shy_興味あり_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-0.8,\"yawMax\":-0.3,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "shy_l_1",
-        "No": "78",
-        "Spec": "{\"id\":\"shy_l_1\",\"description\":\"shy_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.3,\"rollMax\":0.2,\"transitionMin\":1.2,\"transitionMax\":2.0,\"holdMin\":0.4,\"holdMax\":0.8,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_l_2",
-        "No": "79",
-        "Spec": "{\"id\":\"shy_l_2\",\"description\":\"shy_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.6,\"pitchMin\":-0.6,\"pitchMax\":-0.1,\"rollMin\":-0.4,\"rollMax\":0.3,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":0.9,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_l_3",
-        "No": "80",
-        "Spec": "{\"id\":\"shy_l_3\",\"description\":\"shy_興味なし_Var3(タメ)\",\"driver\":\"eye\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":2.0,\"transitionMax\":3.6,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6},{\"part\":\"head\",\"scale\":1.0,\"delay\":0.3}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "shy_l_4",
-        "No": "81",
-        "Spec": "{\"id\":\"shy_l_4\",\"description\":\"shy_興味なし_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":-0.5,\"pitchMax\":0.0,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "shy_n_1",
-        "No": "82",
-        "Spec": "{\"id\":\"shy_n_1\",\"description\":\"shy_普通_Var1(顔背け)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.2,\"rollMax\":0.3,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":0.6,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_n_2",
-        "No": "83",
-        "Spec": "{\"id\":\"shy_n_2\",\"description\":\"shy_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":-0.5,\"pitchMax\":0.2,\"rollMin\":-0.3,\"rollMax\":0.4,\"transitionMin\":0.8,\"transitionMax\":1.2,\"holdMin\":0.6,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":-0.3,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_n_3",
-        "No": "84",
-        "Spec": "{\"id\":\"shy_n_3\",\"description\":\"shy_普通_Var3(タメ)\",\"driver\":\"head\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":1.8,\"transitionMax\":3.2,\"holdMin\":3.0,\"holdMax\":5.0,\"followers\":[{\"part\":\"body\",\"scale\":-0.2,\"delay\":0.5}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "shy_n_4",
-        "No": "85",
-        "Spec": "{\"id\":\"shy_n_4\",\"description\":\"shy_普通_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-0.9,\"yawMax\":-0.4,\"pitchMin\":-0.4,\"pitchMax\":0.1,\"rollMin\":-0.1,\"rollMax\":0.1,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "sys_static",
-        "No": "86",
-        "Spec": "{\"id\":\"sys_static\",\"description\":\"プリセット。削除不可\",\"driver\":\"eye\",\"yawMin\":0.0,\"yawMax\":0.0,\"pitchMin\":0.0,\"pitchMax\":0.0,\"rollMin\":0.0,\"rollMax\":0.0,\"transitionMin\":0.6,\"transitionMax\":1.2,\"holdMin\":1.0,\"holdMax\":3.0,\"rollFollowSpeed\":1.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_h_1",
-        "No": "87",
-        "Spec": "{\"id\":\"tease_h_1\",\"description\":\"tease_興味あり_Var1(見下し)\",\"driver\":\"head\",\"yawMin\":-0.25,\"yawMax\":0.25,\"pitchMin\":0.2,\"pitchMax\":0.4,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":1.5,\"holdMax\":2.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_h_2",
-        "No": "88",
-        "Spec": "{\"id\":\"tease_h_2\",\"description\":\"tease_興味あり_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.35,\"yawMax\":0.35,\"pitchMin\":0.3,\"pitchMax\":0.6,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":0.6,\"transitionMax\":1.0,\"holdMin\":0.8,\"holdMax\":1.5,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_h_3",
-        "No": "89",
-        "Spec": "{\"id\":\"tease_h_3\",\"description\":\"tease_興味あり_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.2,\"pitchMax\":0.4,\"rollMin\":0.6,\"rollMax\":1.0,\"transitionMin\":1.2,\"transitionMax\":1.8,\"holdMin\":2.0,\"holdMax\":3.5,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_h_4",
-        "No": "90",
-        "Spec": "{\"id\":\"tease_h_4\",\"description\":\"tease_興味あり_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.4,\"yawMax\":0.9,\"pitchMin\":0.2,\"pitchMax\":0.4,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "tease_l_1",
-        "No": "91",
-        "Spec": "{\"id\":\"tease_l_1\",\"description\":\"tease_興味なし_Var1(基本)\",\"driver\":\"head\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.1,\"rollMax\":0.6,\"transitionMin\":1.2,\"transitionMax\":2.0,\"holdMin\":0.5,\"holdMax\":1.2,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_l_2",
-        "No": "92",
-        "Spec": "{\"id\":\"tease_l_2\",\"description\":\"tease_興味なし_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.6,\"pitchMin\":0.1,\"pitchMax\":0.4,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":0.8,\"transitionMax\":1.4,\"holdMin\":0.6,\"holdMax\":1.1,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_l_3",
-        "No": "93",
-        "Spec": "{\"id\":\"tease_l_3\",\"description\":\"tease_興味なし_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.4,\"rollMax\":0.9,\"transitionMin\":1.6,\"transitionMax\":2.4,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_l_4",
-        "No": "94",
-        "Spec": "{\"id\":\"tease_l_4\",\"description\":\"tease_興味なし_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":-1.0,\"yawMax\":-0.5,\"pitchMin\":0.0,\"pitchMax\":0.2,\"rollMin\":0.1,\"rollMax\":0.6,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
-      },
-      {
-        "Id": "tease_n_1",
-        "No": "95",
-        "Spec": "{\"id\":\"tease_n_1\",\"description\":\"tease_普通_Var1(基本)\",\"driver\":\"head\",\"yawMin\":-0.3,\"yawMax\":0.3,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":1.0,\"transitionMax\":1.6,\"holdMin\":1.0,\"holdMax\":2.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_n_2",
-        "No": "96",
-        "Spec": "{\"id\":\"tease_n_2\",\"description\":\"tease_普通_Var2(動的)\",\"driver\":\"head\",\"yawMin\":-0.4,\"yawMax\":0.4,\"pitchMin\":0.2,\"pitchMax\":0.5,\"rollMin\":0.3,\"rollMax\":0.8,\"transitionMin\":0.8,\"transitionMax\":1.2,\"holdMin\":0.6,\"holdMax\":1.3,\"followers\":[{\"part\":\"body\",\"scale\":0.9,\"delay\":0.4}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_n_3",
-        "No": "97",
-        "Spec": "{\"id\":\"tease_n_3\",\"description\":\"tease_普通_Var3(首傾げ)\",\"driver\":\"head\",\"yawMin\":-0.1,\"yawMax\":0.1,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.5,\"rollMax\":1.0,\"transitionMin\":1.4,\"transitionMax\":2.0,\"holdMin\":1.5,\"holdMax\":3.0,\"followers\":[{\"part\":\"body\",\"scale\":0.8,\"delay\":0.6}],\"rollFollowSpeed\":5.0,\"lookAtUser\":true}"
-      },
-      {
-        "Id": "tease_n_4",
-        "No": "98",
-        "Spec": "{\"id\":\"tease_n_4\",\"description\":\"tease_普通_Var4(チラ見)\",\"driver\":\"eye\",\"yawMin\":0.5,\"yawMax\":1.0,\"pitchMin\":0.1,\"pitchMax\":0.3,\"rollMin\":0.2,\"rollMax\":0.7,\"transitionMin\":0.6,\"transitionMax\":0.8,\"holdMin\":0.2,\"holdMax\":0.6,\"followers\":[{\"part\":\"head\",\"scale\":0.2,\"delay\":0.1}],\"rollFollowSpeed\":5.0}"
+    "AttitudePatterns": [
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "そっぽを向く",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A6",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "呆れる・うんざり",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "C2",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "考える・思い出す",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "目を伏せる・気まずい",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "C3",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_low",
+        "attitudeDescription": "話している・気がない",
+        "description": "目を泳がせる",
+        "dwell": "短",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "E2",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "興味",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "B5",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.2
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "考える・思い出す",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "言いにくい・気まずい",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A5",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.05
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.05
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "上目遣い",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "B1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_mid",
+        "attitudeDescription": "話している・普通",
+        "description": "考え込む・落ち込む",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A3",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.3
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "興味",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "B5",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "上目遣い",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "B1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "大",
+        "weight": 0.2
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "見比べる",
+        "dwell": "短",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "E3",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.03
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "考える・思い出す",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.04
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.01
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "言いにくい・気まずい",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A5",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.01
+      },
+      {
+        "attitude": "talk_high",
+        "attitudeDescription": "話している・興味津々",
+        "description": "考え込む・落ち込む",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A3",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.01
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "そっぽを向く",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A6",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "様子をうかがう",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "呆れる・うんざり",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "C2",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "考える・思い出す",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "目を伏せる・気まずい",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "C3",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_low",
+        "attitudeDescription": "待っている・気がない",
+        "description": "きょろきょろする",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "E1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "普通に見る",
+        "dwell": "長",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.6
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.02
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "考える・思い出す",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "きょろきょろする",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "E1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "そっぽを向く",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "A6",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.02
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "考え込む・落ち込む",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "A3",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.03
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "あたりを見回す",
+        "dwell": "中",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "E4",
+        "repeatMax": 1,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "idle_mid",
+        "attitudeDescription": "待っている・普通",
+        "description": "目を伏せる・気まずい",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "C3",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.03
+      },
+      {
+        "attitude": "idle_high",
+        "attitudeDescription": "待っている・興味津々",
+        "description": "普通に見る",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "D1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.2
+      },
+      {
+        "attitude": "idle_high",
+        "attitudeDescription": "待っている・興味津々",
+        "description": "興味",
+        "dwell": "長",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "B5",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.5
+      },
+      {
+        "attitude": "idle_high",
+        "attitudeDescription": "待っている・興味津々",
+        "description": "上目遣い",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "",
+        "patternId": "B1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "大",
+        "weight": 0.2
+      },
+      {
+        "attitude": "idle_high",
+        "attitudeDescription": "待っている・興味津々",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.05
+      },
+      {
+        "attitude": "idle_high",
+        "attitudeDescription": "待っている・興味津々",
+        "description": "考える・思い出す",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "",
+        "patternId": "A1",
+        "repeatMax": 6,
+        "repeatMin": 3,
+        "size": "中",
+        "weight": 0.05
+      },
+      {
+        "attitude": "agree",
+        "attitudeDescription": "同意した直後",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_001_active",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.55
+      },
+      {
+        "attitude": "agree",
+        "attitudeDescription": "同意した直後",
+        "description": "興味",
+        "dwell": "長",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_001_active",
+        "patternId": "B5",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.25
+      },
+      {
+        "attitude": "agree",
+        "attitudeDescription": "同意した直後",
+        "description": "上目遣い",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_001_active",
+        "patternId": "B1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "agree",
+        "attitudeDescription": "同意した直後",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "motion_oneshot_D_002_active",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_005_active",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "そっぽを向く",
+        "dwell": "長",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_005_active",
+        "patternId": "A6",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "顔背け",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_006_active",
+        "patternId": "B3",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.15
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "motion_oneshot_D_006_active",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.1
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "目を泳がせる",
+        "dwell": "短",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_007_active",
+        "patternId": "E2",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "deny",
+        "attitudeDescription": "否定した直後",
+        "description": "気圧される",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "motion_oneshot_D_007_active",
+        "patternId": "D2",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.15
+      },
+      {
+        "attitude": "question",
+        "attitudeDescription": "質問した直後",
+        "description": "普通に見る",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_009_active",
+        "patternId": "D1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.4
+      },
+      {
+        "attitude": "question",
+        "attitudeDescription": "質問した直後",
+        "description": "興味",
+        "dwell": "中",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_011_active",
+        "patternId": "B5",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "中",
+        "weight": 0.1
+      },
+      {
+        "attitude": "question",
+        "attitudeDescription": "質問した直後",
+        "description": "上目遣い",
+        "dwell": "長",
+        "moveSpeed": "普通",
+        "oneShotAnimation": "motion_oneshot_D_011_active",
+        "patternId": "B1",
+        "repeatMax": 4,
+        "repeatMin": 2,
+        "size": "大",
+        "weight": 0.2
+      },
+      {
+        "attitude": "question",
+        "attitudeDescription": "質問した直後",
+        "description": "様子をうかがう",
+        "dwell": "短",
+        "moveSpeed": "速い",
+        "oneShotAnimation": "motion_oneshot_D_010_active",
+        "patternId": "C1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "大",
+        "weight": 0.15
+      },
+      {
+        "attitude": "question",
+        "attitudeDescription": "質問した直後",
+        "description": "考える・思い出す",
+        "dwell": "長",
+        "moveSpeed": "遅い",
+        "oneShotAnimation": "motion_oneshot_D_009_active",
+        "patternId": "A1",
+        "repeatMax": 2,
+        "repeatMin": 1,
+        "size": "中",
+        "weight": 0.15
       }
     ],
     "EmotionProfilesV4": {
       "angry": {
         "baseAnimTimeScale": 1.1,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 1.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 1.0
-            }
-          ]
-        },
         "id": "angry",
         "intensityProfiles": {
           "normal": {
@@ -1868,39 +2060,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_017_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 1.2,
         "mixDurationMin": 0.6,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "angry_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "angry_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_h_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -1955,31 +2118,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "angry_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "angry_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_l_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -2034,31 +2172,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "angry_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "angry_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "angry_n_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -2116,98 +2229,6 @@
       },
       "crying": {
         "baseAnimTimeScale": 0.8,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "hold",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "hold",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 0.0
-            }
-          ]
-        },
         "id": "crying",
         "intensityProfiles": {
           "normal": {
@@ -3394,34 +3415,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_013_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.5,
         "mixDurationMin": 1.5,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "crying_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "crying_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "crying_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -3468,26 +3465,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "crying_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "crying_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "crying_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -3534,26 +3511,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "crying_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "crying_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "crying_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -3603,98 +3560,6 @@
       },
       "cuddle": {
         "baseAnimTimeScale": 0.9,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 0.0
-            }
-          ]
-        },
         "id": "cuddle",
         "intensityProfiles": {
           "normal": {
@@ -4791,34 +4656,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_002_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 1.4,
         "mixDurationMin": 0.8,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "cuddle_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "cuddle_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "cuddle_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -4865,26 +4706,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "cuddle_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "cuddle_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "cuddle_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -4930,26 +4751,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "cuddle_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "cuddle_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "cuddle_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -4998,98 +4799,6 @@
       },
       "happy": {
         "baseAnimTimeScale": 1.05,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 1.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 1.0
-            }
-          ]
-        },
         "id": "happy",
         "intensityProfiles": {
           "normal": {
@@ -6314,34 +6023,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_002_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.2,
         "mixDurationMin": 1.2,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "happy_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "happy_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "happy_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -6396,26 +6081,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "happy_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "happy_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "happy_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -6469,26 +6134,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "happy_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "happy_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "happy_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -6545,98 +6190,6 @@
       },
       "laughing": {
         "baseAnimTimeScale": 1.05,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 1.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "eyeLead",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 1.0
-            }
-          ]
-        },
         "id": "laughing",
         "intensityProfiles": {
           "normal": {
@@ -8137,34 +7690,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_002_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.2,
         "mixDurationMin": 1.2,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "laughing_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "laughing_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "laughing_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -8211,26 +7740,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "laughing_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "laughing_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "laughing_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -8276,26 +7785,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "laughing_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "laughing_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "laughing_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -8343,98 +7832,6 @@
         }
       },
       "neutral": {
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 0.0
-            }
-          ]
-        },
         "id": "neutral",
         "intensityProfiles": {
           "normal": {
@@ -10540,39 +9937,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_002_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.0,
         "mixDurationMin": 1.0,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "neutral_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "neutral_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_h_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -10651,31 +10019,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "neutral_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "neutral_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_l_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -10748,31 +10091,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "neutral_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "neutral_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "neutral_n_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -10828,98 +10146,6 @@
       },
       "sad": {
         "baseAnimTimeScale": 0.75,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "hold",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "hold",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 0.0
-            }
-          ]
-        },
         "id": "sad",
         "intensityProfiles": {
           "normal": {
@@ -11908,34 +11134,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_013_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.5,
         "mixDurationMin": 1.5,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "sad_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "sad_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "sad_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -11982,26 +11184,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "sad_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "sad_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "sad_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -12048,26 +11230,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "sad_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "sad_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "sad_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -12117,98 +11279,6 @@
       },
       "shy": {
         "baseAnimTimeScale": 0.85,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "lookUp",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookUp",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAway",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 0.0
-            }
-          ]
-        },
         "id": "shy",
         "intensityProfiles": {
           "normal": {
@@ -14095,39 +13165,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_013_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.5,
         "mixDurationMin": 1.5,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "shy_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "shy_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_h_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -14174,31 +13215,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "shy_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "shy_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_l_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -14245,31 +13261,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "shy_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "shy_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "shy_n_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -14319,98 +13310,6 @@
       },
       "tease": {
         "baseAnimTimeScale": 1.05,
-        "fixedGestureBindingsByAttitude": {
-          "agree": [
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_001_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "agree",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_002_active",
-              "weight": 0.0
-            }
-          ],
-          "deny": [
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_003_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_004_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_005_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_006_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_007_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "deny",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_008_active",
-              "weight": 0.0
-            }
-          ],
-          "question": [
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_009_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_010_active",
-              "weight": 1.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_011_active",
-              "weight": 0.0
-            },
-            {
-              "attitude": "question",
-              "eye": "lookAtUser",
-              "fixedGestureId": "",
-              "oneShotAnimation": "motion_oneshot_D_012_active",
-              "weight": 1.0
-            }
-          ]
-        },
         "id": "tease",
         "intensityProfiles": {
           "normal": {
@@ -21454,39 +20353,10 @@
           }
         },
         "lipSyncScrubClip": "facial_mouth_017_scrub_02",
-        "machines": {
-          "idle": "idle",
-          "talk": "talk"
-        },
         "mixDurationMax": 2.2,
         "mixDurationMin": 1.2,
         "tensionProfiles": {
           "high": {
-            "ambientBindings": [
-              {
-                "driverDefId": "tease_h_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "tease_h_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_h_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_h_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -21533,31 +20403,6 @@
             }
           },
           "low": {
-            "ambientBindings": [
-              {
-                "driverDefId": "tease_l_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "tease_l_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_l_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_l_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -21603,31 +20448,6 @@
             }
           },
           "mid": {
-            "ambientBindings": [
-              {
-                "driverDefId": "tease_n_1",
-                "repeatMax": 8,
-                "repeatMin": 4,
-                "weight": 0.4
-              },
-              {
-                "driverDefId": "tease_n_2",
-                "repeatMax": 5,
-                "repeatMin": 3,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_n_3",
-                "repeatMax": 3,
-                "repeatMin": 2,
-                "weight": 0.3
-              },
-              {
-                "driverDefId": "tease_n_4",
-                "repeatMax": 2,
-                "weight": 0.1
-              }
-            ],
             "gaze": {
               "eyeModeEntries": [
                 {
@@ -21675,6 +20495,369 @@
         }
       }
     },
+    "GesturePatternDefs": [
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "考える・思い出す",
+        "directions": [
+          "上",
+          "斜め上"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "A1",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "逆方向",
+        "bodyTilt": "同方向",
+        "description": "のけぞる・驚く",
+        "directions": [
+          "上"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（強）",
+        "patternId": "A2",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "逆方向",
+        "description": "考え込む・落ち込む",
+        "directions": [
+          "下",
+          "斜め下"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（強）",
+        "patternId": "A3",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "逆方向",
+        "bodyTilt": "傾けない",
+        "description": "縮こまる",
+        "directions": [
+          "下"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（強）",
+        "patternId": "A4",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "言いにくい・気まずい",
+        "directions": [
+          "斜め下"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "A5",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "そっぽを向く",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "A6",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "追従（強）",
+        "bodyTilt": "傾けない",
+        "description": "完全に背ける・拒絶",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（強）",
+        "patternId": "A7",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "上目遣い",
+        "directions": [
+          "下"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "B1",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "顎を上げる・見下す",
+        "directions": [
+          "上"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "B2",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "逆方向",
+        "bodyTilt": "傾けない",
+        "description": "顔背け",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "B3",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "逆方向",
+        "bodyTilt": "傾けない",
+        "description": "すねる・甘える",
+        "directions": [
+          "斜め下"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "B4",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "逆方向",
+        "description": "興味",
+        "directions": [
+          "下",
+          "横",
+          "斜め下",
+          "上",
+          "正面",
+          "斜め上"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "B5",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "様子をうかがう",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "C1",
+        "points": 2,
+        "route": "外して戻る",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "呆れる・うんざり",
+        "directions": [
+          "上"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（中）",
+        "patternId": "C2",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "追従（弱）",
+        "bodyTilt": "傾けない",
+        "description": "目を伏せる・気まずい",
+        "directions": [
+          "下"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "C3",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "追従（強）",
+        "bodyTilt": "傾けない",
+        "description": "普通に見る",
+        "directions": [
+          "正面"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "D1",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "追従（強）",
+        "bodyTilt": "同方向",
+        "description": "気圧される",
+        "directions": [
+          "正面"
+        ],
+        "eyeMovement": "ユーザー注視",
+        "faceMovement": "指定方向",
+        "patternId": "D2",
+        "points": 1,
+        "route": "1点",
+        "tilts": [
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "きょろきょろする",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "E1",
+        "points": 1,
+        "route": "散らす",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "目を泳がせる",
+        "directions": [
+          "斜め上"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "逆方向",
+        "patternId": "E2",
+        "points": 1,
+        "route": "散らす",
+        "tilts": [
+          "なし"
+        ]
+      },
+      {
+        "bodyMovement": "動かない",
+        "bodyTilt": "傾けない",
+        "description": "見比べる",
+        "directions": [
+          "横"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（弱）",
+        "patternId": "E3",
+        "points": 3,
+        "route": "往復",
+        "tilts": [
+          "なし",
+          "右",
+          "左"
+        ]
+      },
+      {
+        "bodyMovement": "追従（中）",
+        "bodyTilt": "傾けない",
+        "description": "あたりを見回す",
+        "directions": [
+          "斜め上"
+        ],
+        "eyeMovement": "指定方向",
+        "faceMovement": "追従（強）",
+        "patternId": "E4",
+        "points": 9,
+        "route": "見回す",
+        "tilts": [
+          "右",
+          "左"
+        ]
+      }
+    ],
     "MixDurationPoses": {
       "animPoses": {
         "effect_wind_001": {},
